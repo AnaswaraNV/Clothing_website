@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="deleteConfirmation.js">
+</script>
+
+<form id="UserInteraction" name="deleteForm"
+	  action="./deleteAction.php" method="post">
+	<br/><br/>
+	<h4> Delete Product Info </h4>
+	<fieldset>
+		<h5>Enter Product Id you would like to remove</h5>
+		<div class="tooltip">*
+			<span class="tooltiptext">required-field</span>
+		</div><br/>
+		<input name="prodid" id="prodid"type="text" placeholder="6 digits Only!"/>
+	</fieldset>
+
+	<input type="submit" name="submit" value="Submit" />
+	<!--onClick="deleteConfirmation()"-->
+	<input type="reset" name="reset" value="Reset" />
+	<br/><br/>
+
+</form>
+</body>
+</html>

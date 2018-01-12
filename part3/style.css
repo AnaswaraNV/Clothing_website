@@ -1,0 +1,586 @@
+/* General set up */
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 10px;
+    color:#FFF;
+}
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-image: url(./media/images/background4.jpeg);
+}
+
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+nav a, nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* typography */
+
+h2, h3, h4 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: firebrick;
+    text-decoration-style:wavy;
+}
+
+h1{
+    font-family: 'Cinzel Decorative', cursive;
+    color: orangered;
+    font-size: 4rem;
+    text-align: center;
+    flex: 5;
+    text-transform: uppercase;
+}
+
+p, input, li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: lightyellow;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+/* classes layout of the content in pages*/
+
+.main {
+    float:left;
+    width:100%;
+}
+
+.main_body{
+    margin-left:-120px;
+    height:100px;
+    text-shadow:5px 5px 10px navajowhite;
+
+}
+.logo_align{
+    float:left;
+    width:200px;
+    height:100px;
+    margin-left:-115%;
+}
+
+.coming-soon{
+    display: block;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    padding:25px;
+    margin:30px;
+    background-color:lightyellow;
+}
+
+
+/*  header layout */
+header{
+    min-width:100%;
+    max-width:1250px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    background-size: 100% 100%;
+}
+
+main, header, nav, footer, section {
+    padding: 1%;
+}
+
+
+/* footer layout */
+
+footer {
+    background-color:#333;
+    color: #efe5d0;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size:90%;
+}
+
+
+/* layout through ids of various content in pages */
+#logo_image_container{
+    display: block;
+    height: 100px;
+    width: 200px;
+    padding-top: 20.15px;
+}
+
+#footer2{
+    font-size: 14px;
+    font-weight: bold;
+    font-style:oblique;
+}
+
+/* Navbar container */
+#nav_bar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+#nav_bar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav_bar a:hover {
+    background-color: palevioletred;
+}
+
+#nav_bar .current-item a
+{
+    text-decoration: none;
+    background-color: mediumvioletred;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 20px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: mediumvioletred;
+    display: block;
+
+}
+
+.sidenav .current-page{
+    background-color: #ff9933;
+    color: #660066;
+
+}
+
+/* main content container layout */
+
+.main {
+    margin-left: 140px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+
+/* table styling */
+
+table {
+    font-family: sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+
+}
+
+td, th {
+    border: 1px solid rgb(190,190,190);
+    /*  padding: 10px 20px;*/
+}
+
+td > p{
+
+    font-family: 'Cinzel Decorative', cursive;
+    color: #332063;
+    font-size: 15px;
+    display:block;
+}
+th {
+    padding-top: 12px;
+    padding-bottom:12px;
+    color:indigo;
+    background-color: rgb(235,235,235);
+}
+
+td {
+    text-align: center;
+}
+
+tr td {
+    background-color: rgb(250,250,250);
+}
+
+/*zoom image */
+td:hover {
+    background-size:  100% 100%;
+    transform:scale(1.4545,1.34);
+    transform-origin:center;
+}
+
+
+/* to break long words in td */
+.wrap{
+    width: 16em;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    border-top-color: #111111;
+    border-top: 2px solid;
+    margin-top: 1px;
+
+}
+
+
+caption {
+    padding: 10px;
+}
+
+/*Form style - add and delete*/
+#UserInteraction
+{
+    border-radius: 5px;
+    border-style:ridge;
+    border-color:black;
+    border-width:thin;
+    background-color: #f2f2f2;
+    padding: 25px;
+    max-width:450px;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+    position:static;
+    float:none;
+}
+#UserInteraction input[type="text"]
+{
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Georgia';
+    color: brown;
+    text-decoration-style: wavy;
+    z-index: 2;
+    font-size: 15px;
+}
+
+#delete
+{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+#UserInteraction {
+    border-radius: 5px;
+    border-style:ridge;
+    border-color:black;
+    border-width:thin;
+    background-color: #f2f2f2;
+    padding: 25px;
+    max-width:450px;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+    position:static;
+    float:none;
+}
+
+#UserInteraction h5{
+
+    font-family: 'Cinzel Decorative', cursive;
+    color: #332063;
+    font-size: 15px;
+    text-align: center;
+    display:inline;
+
+}
+
+
+.styleContainer {
+    font-size: 13px;
+    z-index: 1;
+    width: 80px;
+}
+
+/*Deletion - success and error style */
+.error
+{
+    border:1px solid #CCC;
+    margin:0 0 5px;
+    background-color: red;
+    font-family: "Times New Roman";
+    color: whitesmoke;
+    z-index:1;
+    text-align:center;
+    font-size:25px;
+
+}
+
+.success
+{
+    border:1px solid #CCC;
+    background-color: black;
+    margin:0 0 5px;
+    font-family: "Arial";
+    color:whitesmoke;
+    z-index:1;
+    text-align:center;
+    font-size:20px;
+}
+
+fieldset {
+    border: medium none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+/* Add a background color and some padding around the Contact form */
+.container {
+    border-radius: 5px;
+    border-style:ridge;
+    border-color:red;
+    border-width:thin;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width:450px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    float:left;
+}
+
+/* wrapping contact content and contact us form together in a page*/
+#wrapper {
+    margin:auto;
+    width:900px;
+    height:auto;
+    overflow:auto;
+    text-align:left;
+}
+
+
+/* contact form styling */
+
+#contact {
+    border-style:dotted;
+    border-color:red;
+    border-width:thin;
+    background:#F9F9F9;
+    padding:25px;
+    margin:50px 0;
+}
+
+#contact h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contact h4 {
+    margin:5px 0 15px;
+    display:block;
+    font-size:13px;
+}
+
+
+/* contact form input styling */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"] {
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+
+/* contact form input styling on hover  */
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:2px solid #AAA;
+}
+
+#contact textarea {
+    height:100px;
+    max-width:100%;
+    resize:none;
+}
+
+#contactdetails{
+    padding: 20px;
+    width:300px;
+    margin:0 auto;
+    position:relative;
+    left: -20px;
+    top: 20px;
+    float:right;
+}
+
+
+#contactdetails > p{
+    font-family: 'Cinzel Decorative', cursive;
+    color: #332063;
+    font-size: 15px;
+    display:block;
+    text-align: left;
+
+}
+
+
+/* contact details with contact address sections layout */
+#author{
+    border-radius: 5px;
+    border-style:ridge;
+    border-color:red;
+    border-width:medium;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:300px;
+    margin:0 auto;
+    position:relative;
+    left: -20px;
+    top: 20px;
+    float:right;
+}
+
+
+#author > p{
+    font-family: 'Cinzel Decorative', cursive;
+    color: firebrick;
+    text-decoration-style:wavy;
+    font-size: 13px;
+    display:block;
+    text-align: left;
+}
+
+
+/* layout of submit button and reset button*/
+input[type=submit],
+input[type=reset] {
+    cursor:pointer;
+    width:127px;
+    height:48px;
+    text-align:center;
+    border:none;
+    background:black;
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:20px;
+    border-radius:15px;
+}
+
+/* submit button layout on hover */
+input[type=submit]:hover ,
+input[type=reset]:hover {
+    color:#fff;
+    background-color:#216182;
+    opacity:0.9;
+}
+
+
+
+/* tooltip style*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-size:medium;
+    color:red;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+

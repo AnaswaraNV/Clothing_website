@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<footer>
+
+
+    <div  id="footer1">
+        <form class="form-inline" method="post"> <div id="footer2"> Join Femme Fatale :</div><input id="email1" type="email" name="email" size="40" placeholder="Email Address">
+            <button type="button" class="button" onclick="subscription()">Subscribe now</button>
+
+        </form>
+        <br/>
+    </div>
+
+    <div>
+        <p> FOR ORDER INQUIRIES OR ANY ONLINE RELATED ISSUES, PLEASE REACH US AT:
+            647-640-5492 <br>- AVAILABLE MONDAY-FRIDAY FROM 9AM EST TO 5PM EST</p>
+        <p style="text-align:center">Copyright &copy; <i>Femme Fatale </i></p>
+    </div>
+
+    <script>
+
+        function subscription(){
+            var myValue = document.getElementById('email1').value; // get the value from myTextBox
+
+            // if user did not enter anything in the text box, give error message
+            if (myValue.length == 0) {
+                alert('Please enter a valid email id!');
+                return;
+            }
+            var email = /^.*@.*[.].*$/; // regular expression to check email
+            if (myValue.match(email)) {
+                alert('You have been succesfully subscribed!!!');
+                return;
+            }   else{
+                alert('please enter email in the right format xxx@xxx.xxx');
+                return;
+            }
+        }
+    </script>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="addValidate.js">
+</script>
+<!-- form -->
+<form id="UserInteraction" name="addForm" method="post"
+      onSubmit="return addFormValidation()" action="./addAction.php">
+
+    <h4> Add Product Info </h4>
+
+    <fieldset>
+        <h5>Product id</h5>
+        <div class="tooltip">*
+            <span class="tooltiptext">required-field</span>
+        </div><br/>
+        <input name="prodId" id="prodId"type="text" placeholder="6 digits Only!"/>
+    </fieldset>
+
+    <fieldset>
+        <h5>Product description</h5> <div class="tooltip">*
+        <span class="tooltiptext">required-field</span>
+    </div><br/>
+        <input type="text" name="description" id="description"  placeholder="Product Name" />
+    </fieldset>
+
+    <fieldset>
+        <h5>Price</h5> <div class="tooltip">*
+        <span class="tooltiptext">required-field</span>
+    </div><br/>
+        <input type="text" name="price" id="price" placeholder="Price with two decimals"/>
+    </fieldset>
+
+    <fieldset>
+        <h5>Quantity</h5> <div class="tooltip">*
+        <span class="tooltiptext">required-field</span>
+    </div><br/>
+        <input type="text" name="qty" id="qty" type="text" placeholder="zero or more"/>
+    </fieldset>
+    <br/><br/>
+
+
+    <input type="submit" value="Submit" name="addSubmit"/>
+    <input type="reset" name="reset" value="Reset" name="addReset"/>
+    <br/>
+
+</form>
+</body>
+</html>
